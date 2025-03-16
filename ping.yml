@@ -1,0 +1,7 @@
+---
+- name: Ping Google
+  hosts: all
+  tasks:
+    - name: Ping Google DNS
+      ansible.builtin.command:
+        cmd: ping -c 4 8.8.8.8
